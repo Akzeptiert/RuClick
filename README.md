@@ -1,145 +1,166 @@
-## Disclaimer
-
-This software is provided for legitimate automation purposes. Users are responsible for ensuring their use complies with the terms of service of any applications they automate. The developers assume no liability for misuse.
-
 <div align="center">
 
 ![photo_2025-09-28_20-33-38(1)](https://github.com/user-attachments/assets/bcd4418f-46c8-4ff2-9e48-521d010cf0f0)
   
 # RuClick
-AutoClicker with Macro Support for Windows
+Автокликер с макросами для Windows
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![WPF](https://img.shields.io/badge/WPF-XAML-blue)](https://github.com/dotnet/wpf)
 
+[English](README.md) | **Русский**
+
 </div>
 
 ---
 
-## Features
+## Возможности
 
-### Mouse Automation
-- **Multiple Click Types**: Single, Double, Triple, and Hold clicks
-- **Smart Positioning**: Current cursor position or fixed coordinates with F9 hotkey capture
-- **Random Spread**: Add randomness to click positions for anti-detection
-- **Position Preview**: Real-time visual preview of click location
-- **Cursor Lock**: Lock cursor to fixed position during automation to prevent movement
+### Работа с мышью
+- **Разные типы кликов**: один клик, двойной, тройной или зажатие кнопки
+- **Выбор позиции**: клик там, где курсор, или в указанной точке экрана (захват по F9)
+- **Разброс кликов**: добавляет небольшие отклонения в позицию, чтобы выглядело естественнее
+- **Показ позиции**: видно на экране, где именно будет клик
+- **Блокировка курсора**: курсор не сдвинется с указанной точки во время работы
 
-### Keyboard Automation
-- **Auto Key Pressing**: Automate any keyboard key
-- **Configurable Intervals**: Precise timing from 1 millisecond to hours
-- **Repeat Control**: Infinite loop or custom repeat count
+### Работа с клавиатурой
+- **Нажатие клавиш**: можно автоматизировать любую кнопку на клавиатуре
+- **Настройка интервалов**: от 1 миллисекунды до нескольких часов
+- **Количество повторов**: бесконечно или заданное число раз
 
-### Macro Recording & Playback
-- **Record Actions**: Capture mouse clicks and keyboard inputs in real-time
-- **Playback Macros**: Replay recorded sequences with customizable repeat settings
-- **Macro Management**: Save, load, and delete macros with easy dropdown selection
+### Макросы
+- **Запись**: программа запоминает клики мыши и нажатия клавиш
+- **Воспроизведение**: повторяет записанное с нужными настройками
+- **Работа с макросами**: сохраняйте, загружайте и удаляйте через меню
 
-### Profile Management
-- **Save Profiles**: Store complete application configurations
-- **Quick Load**: Select profiles from dropdown menu
-- **Profile Reset**: Select placeholder to reset all settings to defaults
-- **Auto-Location**: Profiles stored in `%APPDATA%\RuClick\Profiles\`
+### Профили
+- **Сохранение профилей**: можно сохранить все настройки программы
+- **Быстрая загрузка**: выбирайте профиль из списка
+- **Сброс настроек**: выберите плейсхолдер, чтобы вернуть всё как было
+- **Где хранятся**: профили лежат в `%APPDATA%\RuClick\Profiles\`
 
-### Advanced Settings
-- **Reset Settings**: One-click reset to factory defaults
-- **Quick System Commands**: Fast access to Windows shortcuts (Win+R, Task Manager, etc.)
-- **Multilingual Support**: 12 languages with automatic UI updates
-- **Dark Theme**: Modern, eye-friendly dark interface
+### Дополнительно
+- **Сброс**: вернуть программу к исходным настройкам одной кнопкой
+- **Системные команды**: быстрый запуск Win+R, Диспетчера задач и других функций Windows
+- **12 языков**: можно выбрать нужный язык, интерфейс сразу поменяется
+- **Темная тема**: удобный темный интерфейс
 
-### Statistics & Tracking
-- **Total Click Counter**: Track all clicks performed
-- **Session Statistics**: Monitor current session activity
-- **Daily Statistics**: View today's usage
-- **Program Uptime**: Total time using the application
-- **Persistent Storage**: Statistics saved automatically to `%APPDATA%\RuClick\`
+### Статистика
+- **Счетчик кликов**: показывает, сколько кликов выполнено
+- **Статистика сеанса**: сколько работали прямо сейчас
+- **Статистика за день**: что сделано за сегодня
+- **Время работы**: сколько всего пользовались программой
+- **Сохранение**: статистика записывается автоматически в `%APPDATA%\RuClick\`
 
-### Download & Run
-1. Download the latest `RuClick.exe` from [Releases](../../releases)
-2. Run the executable - no installation required
-3. Application data will be created in `%APPDATA%\RuClick\`
+---
 
-> **Note**: Windows SmartScreen may warn about an "unrecognized app" since the executable is not digitally signed. This is normal for open-source software. Click **"More info"** → **"Run anyway"** to proceed.
+## Как начать
 
-### Building from Source
+### Скачать и запустить
+1. Скачайте `RuClick.exe` из [Releases](../../releases)
+2. Запустите файл — никакой установки не нужно
+3. Папка с данными создастся сама в `%APPDATA%\RuClick\`
+
+> **Важно**: Windows SmartScreen может показать предупреждение про "неизвестное приложение", потому что файл не подписан цифровой подписью. Это нормально для open-source проектов. Нажмите **"Подробнее"** → **"Выполнить в любом случае"**.
+
+### Собрать самому
 ```bash
-# Clone the repository
+# Скачать код
 git clone https://github.com/Akzeptiert/RuClick.git
 cd RuClick/RuClick
 
-# Build the project
+# Собрать проект
 dotnet build -c Release
 
-# Publish as single executable
+# Создать один exe-файл
 dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
 ```
 
-The compiled executable will be in `bin\Release\net8.0-windows\win-x64\publish\`
+Готовый файл будет в `bin\Release\net8.0-windows\win-x64\publish\`
 
 ---
 
-## Hotkeys
+## Горячие клавиши
 
-| Hotkey | Action |
-|--------|--------|
-| **F6** | Start/Stop Auto Clicker |
-| **F7** | Record/Stop Macro |
-| **F8** | Play/Stop Macro |
-| **F9** | Capture Cursor Position |
-
----
-
-## Supported Languages
-
-RuClick supports 12 languages with full UI translation:
-
-- English (Default)
-- Russian (Русский)
-- Ukrainian (Українська)
-- German (Deutsch)
-- French (Français)
-- Spanish (Español)
-- Italian (Italiano)
-- Portuguese (Português)
-- Polish (Polski)
-- Turkish (Türkçe)
-- Japanese (日本語)
-- Chinese (中文)
-
-Language can be changed from the dropdown menu in the interface. When resetting settings, language automatically reverts to English.
+| Клавиша | Что делает |
+|---------|----------|
+| **F6** | Запустить/остановить автокликер |
+| **F7** | Начать/закончить запись макроса |
+| **F8** | Воспроизвести макрос |
+| **F9** | Запомнить позицию курсора |
 
 ---
 
-## Technology Stack
+## Языки
 
-- **Framework**: .NET 8.0
-- **UI**: WPF (Windows Presentation Foundation)
-- **Architecture**: MVVM (Model-View-ViewModel) pattern
-- **Language**: C# 12
-- **Build**: Self-contained single-file executable
+В RuClick есть 12 языков с полным переводом:
+
+- Английский (По умолчанию)
+- Русский (Русский)
+- Украинский (Українська)
+- Немецкий (Deutsch)
+- Французский (Français)
+- Испанский (Español)
+- Итальянский (Italiano)
+- Португальский (Português)
+- Польский (Polski)
+- Турецкий (Türkçe)
+- Японский (日本語)
+- Китайский (中文)
+
+Язык меняется в выпадающем меню. При сбросе настроек язык вернётся на английский.
 
 ---
 
-## Data Storage
+## Что использовалось
 
-All application data is stored in `%APPDATA%\RuClick\`:
-
-This ensures:
-- Data persists across application updates
-- No administrator permissions required
-- Easy backup and transfer of settings
-- Clean uninstallation (just delete the folder)
+- **Фреймворк**: .NET 8.0
+- **Интерфейс**: WPF (Windows Presentation Foundation)
+- **Архитектура**: MVVM (Model-View-ViewModel)
+- **Язык**: C# 12
+- **Сборка**: один exe-файл со всем необходимым
 
 ---
 
-## System Requirements
+## Где хранятся данные
 
-- **Operating System**: Windows 10 (64-bit) or Windows 11
-- **Memory**: Minimal (< 50 MB RAM)
-- **Storage**: ~70 MB for executable
-- **Permissions**: No administrator rights required
-- **.NET Runtime**: Not required (self-contained build)
+Все файлы программы лежат в `%APPDATA%\RuClick\`:
 
-[Report Bug](../../issues) · [Request Feature](../../issues)
+Плюсы:
+- Данные не пропадут при обновлении программы
+- Не нужны права администратора
+- Легко сделать резервную копию или перенести на другой компьютер
+- Чтобы удалить всё — просто удалите эту папку
+
+---
+
+## Системные требования
+
+- **ОС**: Windows 10 (64-bit) или Windows 11
+- **Память**: Мало (меньше 50 МБ)
+- **Место на диске**: примерно 70 МБ для exe-файла
+- **Права**: Администратор не нужен
+- **.NET Runtime**: Не нужен (всё встроено)
+
+---
+
+## Лицензия
+
+Проект под лицензией MIT — подробности в файле [LICENSE](LICENSE).
+
+---
+
+## Важно
+
+Программа сделана для легальной автоматизации. Вы сами отвечаете за то, как используете её, и за соблюдение правил приложений, которые автоматизируете. Разработчики не отвечают за неправильное использование.
+
+---
+
+<div align="center">
+
+[Сообщить об ошибке](../../issues) · [Предложить идею](../../issues)
+
+</div>
+
