@@ -126,7 +126,7 @@ dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
 
 ## Где хранятся данные
 
-Все файлы программы лежат в `%APPDATA%\RuClick\`:
+Все файлы программы лежат в `%APPDATA%\RuClick\`
 
 Плюсы:
 - Данные не пропадут при обновлении программы
