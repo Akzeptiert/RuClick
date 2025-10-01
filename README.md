@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![WPF](https://img.shields.io/badge/WPF-XAML-blue)](https://github.com/dotnet/wpf)
 
-[Русский](README.md) | **English**
+[English](README_ENG.md) | **Русский**
 
 </div>
 
