@@ -61,6 +61,8 @@ AutoClicker with Macro Support for Windows
 2. Run the executable - no installation required
 3. Application data will be created in `%APPDATA%\RuClick\`
 
+> **Note**: Windows SmartScreen may warn about an "unrecognized app" since the executable is not digitally signed. This is normal for open-source software. Click **"More info"** → **"Run anyway"** to proceed.
+
 ### Building from Source
 ```bash
 # Clone the repository
