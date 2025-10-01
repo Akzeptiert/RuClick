@@ -136,7 +136,7 @@ This ensures:
 
 - **Operating System**: Windows 10 (64-bit) or Windows 11
 - **Memory**: Minimal (< 50 MB RAM)
-- **Storage**: ~15 MB for executable
+- **Storage**: ~70 MB for executable
 - **Permissions**: No administrator rights required
 - **.NET Runtime**: Not required (self-contained build)
 
