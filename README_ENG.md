@@ -1,1 +1,167 @@
+<div align="center">
+
+![photo_2025-09-28_20-33-38(1)](https://github.com/user-attachments/assets/bcd4418f-46c8-4ff2-9e48-521d010cf0f0)
+  
+# RuClick
+Auto clicker with macros for Windows
+
+[![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
+[![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows)](https://www.microsoft.com/windows)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![WPF](https://img.shields.io/badge/WPF-XAML-blue)](https://github.com/dotnet/wpf)
+
+**English** | [Русский](README.md)
+
+</div>
+
+---
+
+## Features
+
+### Mouse
+- **Different click types**: single, double, triple, or hold the button
+- **Position options**: click where cursor is, or at a specific screen point (capture with F9)
+- **Click spread**: adds small variations to position to look more natural
+- **Position preview**: shows on screen exactly where the click will be
+- **Cursor lock**: cursor won't move from the set point during operation
+
+### Keyboard
+- **Key pressing**: automate any keyboard button
+- **Interval settings**: from 1 millisecond to several hours
+- **Repeat count**: infinite or a set number of times
+
+### Macros
+- **Recording**: the program remembers mouse clicks and key presses
+- **Playback**: repeats what was recorded with desired settings
+- **Macro management**: save, load, and delete through the menu
+
+### Profiles
+- **Saving profiles**: you can save all program settings
+- **Quick loading**: pick a profile from the list
+- **Reset settings**: select placeholder to return everything to defaults
+- **Storage location**: profiles are stored in `%APPDATA%\RuClick\Profiles\`
+
+### Extra
+- **Reset**: return the program to default settings with one button
+- **System commands**: quick launch of Win+R, Task Manager, and other Windows functions
+- **12 languages**: pick the language you need, interface changes instantly
+- **Dark theme**: comfortable dark interface
+
+### Statistics
+- **Click counter**: shows how many clicks were performed
+- **Session stats**: how long you've been working right now
+- **Daily stats**: what was done today
+- **Runtime**: total time using the program
+- **Auto-save**: statistics are saved automatically to `%APPDATA%\RuClick\`
+
+---
+
+## Getting Started
+
+### Download and run
+1. Download `RuClick.exe` from [Releases](../../releases)
+2. Run the file — no installation needed
+3. Data folder will be created automatically in `%APPDATA%\RuClick\`
+
+> **Note**: Windows SmartScreen might show a warning about "unknown app" because the file isn't digitally signed. This is normal for open-source projects. Click **"More info"** → **"Run anyway"**.
+
+### Build it yourself
+```bash
+# Download code
+git clone https://github.com/Akzeptiert/RuClick.git
+cd RuClick/RuClick
+
+# Build project
+dotnet build -c Release
+
+# Create single exe file
+dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
+```
+
+The ready file will be in `bin\Release\net8.0-windows\win-x64\publish\`
+
+---
+
+## Hotkeys
+
+| Key | What it does |
+|---------|----------|
+| **F6** | Start/stop auto clicker |
+| **F7** | Start/stop macro recording |
+| **F8** | Play macro |
+| **F9** | Remember cursor position |
+
+---
+
+## Languages
+
+RuClick has 12 languages with full translation:
+
+- English (Default)
+- Russian (Русский)
+- Ukrainian (Українська)
+- German (Deutsch)
+- French (Français)
+- Spanish (Español)
+- Italian (Italiano)
+- Portuguese (Português)
+- Polish (Polski)
+- Turkish (Türkçe)
+- Japanese (日本語)
+- Chinese (中文)
+
+Language changes in the dropdown menu. When you reset settings, language goes back to English.
+
+---
+
+## What's used
+
+- **Framework**: .NET 8.0
+- **Interface**: WPF (Windows Presentation Foundation)
+- **Architecture**: MVVM (Model-View-ViewModel)
+- **Language**: C# 12
+- **Build**: single exe file with everything included
+
+---
+
+## Where data is stored
+
+All program files are in `%APPDATA%\RuClick\`:
+
+Benefits:
+- Data won't disappear when updating the program
+- No admin rights needed
+- Easy to backup or move to another computer
+- To delete everything — just delete this folder
+
+---
+
+## System Requirements
+
+- **OS**: Windows 10 (64-bit) or Windows 11
+- **Memory**: Low (less than 50 MB)
+- **Disk space**: about 70 MB for the exe file
+- **Permissions**: Admin not needed
+- **.NET Runtime**: Not needed (everything is built-in)
+
+---
+
+## License
+
+The project is under the MIT License — details in [LICENSE](LICENSE) file.
+
+---
+
+## Important
+
+The program is made for legal automation. You're responsible for how you use it and for following the rules of apps you automate. Developers are not responsible for misuse.
+
+---
+
+<div align="center">
+
+[Report Bug](../../issues) · [Suggest Feature](../../issues)
+
+</div>
+
 
