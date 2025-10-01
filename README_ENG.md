@@ -160,7 +160,7 @@ The program is made for legal automation. You're responsible for how you use it 
 
 <div align="center">
 
-[Report Bug](../../issues) · [Suggest Feature](../../issues)
+[Report Bug](../../issues) · [Suggest Idea](../../issues)
 
 </div>
 
