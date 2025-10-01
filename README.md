@@ -148,7 +148,7 @@ dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true
 
 ## Лицензия
 
-Проект под лицензией MIT — подробности в файле [LICENSE](LICENSE).
+Проект под лицензией MIT — подробности в файле [LICENSE](LICENSE)
 
 ---
 
