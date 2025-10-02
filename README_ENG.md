@@ -24,6 +24,9 @@ Auto Clicker with Macro Recording for Windows
 - **Click spread**: adds small variations to position to look more natural
 - **Position preview**: shows on screen exactly where the click will be
 - **Cursor lock**: cursor won't move from the set point during operation
+- **High speed**: up to 500+ clicks per second with a minimum interval of 1 millisecond
+
+![animation(1)](https://github.com/user-attachments/assets/40c68149-1eed-4a7e-a3e7-2a7391b44d7d)
 <img width="697" height="685" alt="{079E6D70-B66A-4B90-8CC4-B94AF87EDB33}" src="https://github.com/user-attachments/assets/865a8b14-5464-4f30-a783-b9f958ad9493" />
 
 ### Keyboard
