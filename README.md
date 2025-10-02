@@ -9,6 +9,7 @@
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows)](https://www.microsoft.com/windows)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![WPF](https://img.shields.io/badge/WPF-XAML-blue)](https://github.com/dotnet/wpf)
+![Speed](https://img.shields.io/badge/Speed-500+_CPS-red)
 
 [English](README_ENG.md) | **Русский**
 
@@ -24,6 +25,9 @@
 - **Разброс кликов**: добавляет небольшие отклонения в позицию, чтобы выглядело естественнее
 - **Показ позиции**: видно на экране, где именно будет клик
 - **Блокировка курсора**: курсор не сдвинется с указанной точки во время работы
+- **Высокая скорость**: до 500+ кликов в секунду при минимальном интервале в 1 миллисекунду
+![freecompress-animation(2)](https://github.com/user-attachments/assets/940ad7ca-f43f-4481-96fd-3ab71e6c03de)
+
 <img width="700" height="685" alt="Снимок экрана 2025-10-02 204309" src="https://github.com/user-attachments/assets/477133a0-b497-4348-af54-babde2d2f2a5" />
 
 ### Работа с клавиатурой
