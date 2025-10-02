@@ -24,16 +24,19 @@ Auto Clicker with Macro Recording for Windows
 - **Click spread**: adds small variations to position to look more natural
 - **Position preview**: shows on screen exactly where the click will be
 - **Cursor lock**: cursor won't move from the set point during operation
+<img width="697" height="685" alt="{079E6D70-B66A-4B90-8CC4-B94AF87EDB33}" src="https://github.com/user-attachments/assets/865a8b14-5464-4f30-a783-b9f958ad9493" />
 
 ### Keyboard
 - **Key pressing**: automate any keyboard button
 - **Interval settings**: from 1 millisecond to several hours
 - **Repeat count**: infinite or a set number of times
+<img width="697" height="520" alt="{35977830-A1B8-48CC-B2CF-BBC2626C353E}" src="https://github.com/user-attachments/assets/225b4026-44db-449b-a875-ccae063d686b" />
 
 ### Macros
 - **Recording**: the program remembers mouse clicks and key presses
 - **Playback**: repeats what was recorded with desired settings
 - **Macro management**: save, load, and delete through the menu
+<img width="658" height="304" alt="{3F5F8B10-43D7-41FB-8AA0-D4EB15013D4B}" src="https://github.com/user-attachments/assets/b6b67b01-051f-4da2-a98c-c301b79f9812" />
 
 ### Profiles
 - **Saving profiles**: you can save all program settings
@@ -46,6 +49,7 @@ Auto Clicker with Macro Recording for Windows
 - **System commands**: quick launch of Win+R, Task Manager, and other Windows functions
 - **12 languages**: pick the language you need, interface changes instantly
 - **Dark theme**: comfortable dark interface
+<img width="697" height="670" alt="{C53E5F7B-A12C-4B0F-976B-9D05B38230C7}" src="https://github.com/user-attachments/assets/3950d56a-3d99-4825-bed9-465b8899ea88" />
 
 ### Statistics
 - **Click counter**: shows how many clicks were performed
@@ -53,6 +57,7 @@ Auto Clicker with Macro Recording for Windows
 - **Daily stats**: what was done today
 - **Runtime**: total time using the program
 - **Auto-save**: statistics are saved automatically to `%APPDATA%\RuClick\`
+<img width="697" height="682" alt="{327EB681-DEC2-4948-807E-C542F69568C6}" src="https://github.com/user-attachments/assets/c66337fd-a213-4553-a924-13f6317cc8c2" />
 
 ---
 
@@ -109,6 +114,7 @@ RuClick has 12 languages with full translation:
 - Turkish (Türkçe)
 - Japanese (日本語)
 - Chinese (中文)
+<img width="427" height="343" alt="{50E354CA-4844-4BB1-ADBA-222FF075CBB2}" src="https://github.com/user-attachments/assets/8ca3cfa8-ea63-4e4c-be87-e26cbef58bca" />
 
 Language changes in the dropdown menu. When you reset settings, language goes back to English.
 
@@ -127,6 +133,8 @@ Language changes in the dropdown menu. When you reset settings, language goes ba
 ## Where data is stored
 
 All program files are in `%APPDATA%\RuClick\`:
+
+<img width="658" height="619" alt="Снимок экрана 2025-10-02 204803" src="https://github.com/user-attachments/assets/6a5a6657-0be4-4efb-bccd-de6d6695b92a" />
 
 Benefits:
 - Data won't disappear when updating the program
