@@ -3,7 +3,7 @@
 ![photo_2025-09-28_20-33-38(1)](https://github.com/user-attachments/assets/bcd4418f-46c8-4ff2-9e48-521d010cf0f0)
   
 # RuClick
-Автокликер с макросами для Windows
+Автокликер с записью макросов для Windows
 
 [![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet)](https://dotnet.microsoft.com/)
 [![Windows](https://img.shields.io/badge/Windows-10%2F11-0078D6?logo=windows)](https://www.microsoft.com/windows)
